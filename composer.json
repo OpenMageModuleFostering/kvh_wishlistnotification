@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Kvh_Wishlistnotification",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Wishlist Notification",
+    "authors": [
+    {
+        "name": "Hitesh Agrawal",
+        "email": "hiteshagrawal84@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

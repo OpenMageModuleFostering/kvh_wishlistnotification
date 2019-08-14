@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Kvh_Wishlistnotification</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Wishlist Notification</summary>
+    <description>Wishlist Notification</description>
+    <notes>Wishlist Notification</notes>
+    <authors><author><name>Hitesh Agrawal</name><user>hiteshmca111</user><email>hiteshagrawal84@gmail.com</email></author></authors>
+    <date>2014-04-16</date>
+    <time>15:14:13</time>
+    <contents><target name="magelocal"><dir name="Kvh"><dir name="Wishlistnotification"><dir name="Helper"><file name="Data.php" hash="63eb02cee7c6d643da3a2a1e6ad4751f"/></dir><dir name="Model"><file name="Observer.php" hash="18aa9b170ac36f326a211f2b55e8a590"/></dir><dir name="etc"><file name="config.xml" hash="e50b46b5fae3cbeb2a84b0381b6b3046"/><file name="system.xml" hash="e5fc142cc87015b5fed8b43ade5bf284"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Kvh_Wishlistnotification.xml" hash="5ba5993daefa317ed21847fcbe7fea03"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><file name="wishlistnotification.html" hash="17206cd6093d25fda809110b4493d096"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="wishlistnotification"><file name="default.phtml" hash="762b88af1440bcb013ded173f7784e49"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

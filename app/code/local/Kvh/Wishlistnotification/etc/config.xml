@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kvh_Wishlistnotification>
+            <version>0.1.0</version>
+        </Kvh_Wishlistnotification>
+    </modules>
+    <frontend>
+        <routers>
+            <Kvh_Wishlistnotification>
+                <use>standard</use>
+                <args>
+                    <module>Kvh_Wishlistnotification</module>
+                    <frontName>Wishlistnotification</frontName>
+                </args>
+            </Kvh_Wishlistnotification>
+        </routers>
+           
+		 <events>
+                <wishlist_add_product>
+                    <observers>
+                        <send_notify>
+                            <class>Wishlistnotification/observer</class>
+                            <method>sendNotification</method>
+                        </send_notify>
+                    </observers>
+                </wishlist_add_product>
+			 
+            </events>
+		 
+    </frontend>
+	<global>
+		<models>
+            <Wishlistnotification>
+                <class>Kvh_Wishlistnotification_Model</class> 
+            </Wishlistnotification> 
+        </models> 
+		
+		<helpers>
+            <wishlistnotification><class>Kvh_Wishlistnotification_Helper</class></wishlistnotification>
+             
+        </helpers>
+		
+	<template>
+      <email>
+        <wishlist_notification_email_template module="Wishlistnotification">
+          <label>Wishlist Notify</label>
+          <file>wishlistnotification.html</file>
+          <type>html</type>
+        </wishlist_notification_email_template> 
+      </email>
+    </template>
+		  
+	</global>
+   
+   <default>
+      <wishlist> 
+         <notification>     
+                <notifyenable>1</notifyenable>
+				<adminemails>kvhsolutions@gmail.com</adminemails>
+				<email_template>wishlist_notification_email_template</email_template>
+            </notification>
+      </wishlist>
+    </default>
+   
+</config>
